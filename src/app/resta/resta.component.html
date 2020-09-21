@@ -1,0 +1,27 @@
+<div class="container my-3">
+    <h2>Restar</h2>
+    <p>Calcula la <code> RESTA </code> de dos numeros..!</p>
+    <form action="/action_page.php" class="was-validated">
+      <div class="form-group">
+        <label for="firstNumber">Primer numero:</label>
+        <input type="number" class="form-control" id="firstNumber" placeholder="Introduzca primer numero"
+        name="firstNumber" [(ngModel)] = "firstNumber" required>
+        <div class="valid-feedback">Valido.</div>
+        <div class="invalid-feedback">Por favor rellene este campo.</div>
+      </div>
+      <div class="form-group">
+        <label for="secondNumber">Segundo numero:</label>
+        <input type="number" class="form-control" id="secondNumber" placeholder="Introduzca segundo numero" 
+        name="secondNumber" [(ngModel)] = "secondNumber" required>
+        <div class="valid-feedback">Valido.</div>
+        <div class="invalid-feedback">Por favor rellene este campo.</div>
+      </div>
+      <div class="my-3">
+        <label for="result"><strong>Resultado: {{result}}</strong></label>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary"  (click)="subtraction()">Calcular</button>
+      </div>
+    </form>
+  </div>
